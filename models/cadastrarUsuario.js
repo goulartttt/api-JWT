@@ -7,7 +7,8 @@ const cadastrarUsuario = new Schema({
     nome:{type: String, required: true },
     dataAniversario:{type: String, required:true},
     cpf:{type:String, required:true},
-    password:{type:String, required:true}
+    password:{type:String, required:true},
+    codeUser:{type:String, required:true}
 })  
 
 module.exports = mongoose.model('cadastrarUsuario', cadastrarUsuario);
